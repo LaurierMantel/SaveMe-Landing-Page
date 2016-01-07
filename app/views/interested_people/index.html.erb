@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Interested People</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @interested_people.each do |interested_person| %>
+      <tr>
+        <td><%= link_to 'Show', interested_person %></td>
+        <td><%= link_to 'Edit', edit_interested_person_path(interested_person) %></td>
+        <td><%= link_to 'Destroy', interested_person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Interested person', new_interested_person_path %>

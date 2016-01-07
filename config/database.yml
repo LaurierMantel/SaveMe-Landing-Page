@@ -1,0 +1,17 @@
+
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: db/helpappwithnolan
+
+test:
+  <<: *default
+  database: db/testhelpwithnolan
+
+production:
+  <<: *default
+  database: db/production
