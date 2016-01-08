@@ -1,5 +1,9 @@
-<h1>New Interested Person</h1>
+<% if @interested_person.errors.messages.blank? %>
+  <div class="col-md-6 col-md-offset-3">
+  	<h1>Interested in Help? Sign up and we'll let you know when we hit the app store.</h1>
+  </div>
+<% end %>
 
 <%= render 'form' %>
 
-<%= link_to 'Back', interested_people_path %>
+

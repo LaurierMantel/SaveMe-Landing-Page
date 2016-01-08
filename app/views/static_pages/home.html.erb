@@ -1,33 +1,48 @@
-<div class="jumbotron">
+<div class="jumbotron" style="background-color:transparent !important;">
   <div class="container">
     <div class="row">
       <div class="col-lg-9">
-        <h1>There when you need it</h1>
-        <p>Help makes it simple for you to handle your emergency.  One button does it all.</p>
+        <h1>In an emergency, every second counts.</h1>
+        <p> Save Me is the fastest way to call for help.</p>
         <p><%= link_to 'Sign up', signup_path, class: "btn btn-primary btn-lg" %></p>
       </div>
     </div>
   </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" style="background-color: #F25555;">
+  <div class="row"><br></div>
   <div class="row">
     <div class="col-lg-4">
-      <%= image_tag 'mockups/Call 911_iphone6_silver_portrait.png', size: "277x558", class: "center-block" %>
+      <%= image_tag 'mockups/call 911.png', size: "277x558", class: "center-block" %>
+      <br>
     </div>
     <div class="col-lg-4">
-      <%= image_tag 'mockups/Cancel Old_iphone6_silver_portrait.png', size: "277x558", class: "center-block" %>
+      <%= image_tag 'mockups/cancel old.png', size: "277x558", class: "center-block" %>
+      <br>
     </div>
     <div class="col-lg-4">
-      <%= image_tag 'mockups/Dialing_iphone6_silver_portrait.png', size: "277x558", class: "center-block" %>
+      <%= image_tag 'mockups/dialing.png', size: "277x558", class: "center-block" %>
+      <br>
     </div>
   </div>
 </div>
-<div class="col-md-4">
-  <h3>Call 911 with the tap of a button</h3>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h2 class="text-center">With one tap: </h2>
+  </div>
 </div>
-<div class="col-md-4">
-  <h3>Send important information to first responders in real time</h3>
-</div>
-<div class="col-md-4">
-  <h3>Let your people know that you are in trouble</h3>
+<div class="row">
+  <div class="col-md-4 feature-desc">
+    Call 911
+  </div>
+  <div class="col-md-4">
+    <p class="feature-desc">
+      Send your location and personal information to first responders to save precious in your time of need
+    </p>
+  </div>
+    <div class="col-md-4 feature-desc">
+    <p>
+      Text Emergency contacts
+    </p>
+  </div>
 </div>
