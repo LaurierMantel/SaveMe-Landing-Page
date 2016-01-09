@@ -12,7 +12,7 @@
 <style>
 .navbar-default {
     background-color: #F25555;
-    border-color: #F25555;
+    border-color: #F29999;
 }
 .btn-primary {
   background-color: #F25555;
@@ -41,24 +41,24 @@
 </style>
 <body>
 	<div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <%= link_to 'SaveMe', root_path, class: 'navbar-brand', style: 'font-size: 3em;' %>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">          
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <%= link_to 'Sign up', signup_path, style: "color: #FFFFFF" %>
-            </li>
-          </ul>
-        </div>
+    <div class="container">
+      <div class="navbar-header">
+        <%= link_to 'SaveMe', root_path, class: 'navbar-brand', style: 'font-size: 3em;' %>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">          
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <%= link_to 'Sign up', signup_path, style: "color: #FFFFFF" %>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
 
 <%= yield %>
 
